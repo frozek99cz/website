@@ -1,0 +1,142 @@
+/* Body and Basic Styling */
+body {
+    background-color: #090909;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: rgba(15, 15, 15, 0.8);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Scroll-activated class for shadow */
+.scroll-active {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo */
+.logo a {
+    color: #00d20e;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Navbar Menu */
+.menu {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu li a:hover {
+    background-color: #00b50c;
+    color: #000;
+}
+
+/* Search Container */
+.search-container {
+    position: relative;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: #222;
+    border-radius: 25px;
+    padding: 5px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.search input[type="text"] {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #ccc;
+    padding: 8px;
+    font-size: 14px;
+    width: 150px;
+    transition: width 0.4s ease;
+}
+
+.search input[type="text"]::placeholder {
+    color: #ccc;
+}
+
+.search button {
+    background-color: #00d20e;
+    border: none;
+    border-radius: 50%;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 8px;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.search button:hover {
+    background-color: #00b50c;
+}
+
+/* Search Suggestions Dropdown */
+.suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: none; /* Hidden by default */
+    z-index: 1;
+}
+
+.suggestions li {
+    padding: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+    border-bottom: 1px solid #555;
+    transition: background-color 0.3s ease;
+}
+
+.suggestions li:hover {
+    background-color: #444;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
